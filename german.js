@@ -11,20 +11,9 @@ var translator = (function(oldLanguage) {
   oldLanguage.translateToGerman = function(text) {
     var array = text.split(" ")
     for (var i = 0; i < array.length; i++) {
-      if (array[i] === "merry") {
-        array[i] = german.merry
-      } else if (array[i] === "christmas") {
-        array[i] = german.christmas
-      } else if (array[i] === "and") {
-        array[i] = german.and
-      } else if (array[i] === "happy") {
-        array[i] = german.happy
-      } else if (array[i] === "new") {
-        array[i] = german.new
-      } else if (array[i] === "year") {
-        array[i] = german.year
-      } else if (array[i] === "holidays") {
-        array[i] = german.holidays
+      array[i] = german[array[i]]
+      if (array[i] === undefined) {
+        array [i] = "monkeybutt"
       }
     }
     text = array.join(" ")

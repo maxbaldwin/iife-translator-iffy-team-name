@@ -5,13 +5,13 @@ var speak = document.getElementById('speak')
 
 
 buttonClick.addEventListener("click", function() {
-  var inputText = document.getElementById("message");
+  var inputText = document.getElementById("message").value.toLowerCase();
   if (chosenLang.value === "Latin") {
-		var text = translator.translateToLatin(inputText.value);
+		var text = translator.translateToLatin(inputText);
 	}else if (chosenLang.value === "Haitian") {
-		var text = translator.translateToHaitian(inputText.value);
+		var text = translator.translateToHaitian(inputText);
 	}else if (chosenLang.value === "German") {
-		var text = translator.translateToGerman(inputText.value);
+		var text = translator.translateToGerman(inputText);
 	}
   document.getElementById('placement').innerHTML = text
 })
