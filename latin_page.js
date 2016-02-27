@@ -35,7 +35,7 @@ var translator = (function(oldLanguage) {
         array[i] = latin.new
       }
   }
-  text = array.join("")
+  text = array.join(" ")
   return text
 }
 return oldLanguage
