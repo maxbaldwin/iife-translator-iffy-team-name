@@ -11,11 +11,10 @@ var translator = (function(oldLanguage) {
     "and": "et"
   }
 
-// IFFE statements 16 - 43
+// IFFE statements 16 - 42
 
   oldLanguage.translateToLatin = function(text) {
     var array = text.split(" ")
-    console.log("array", array);
     for (var i = 0; i < array.length; i++) {
       
 // list all arrays used, lines 23 - 36
@@ -42,6 +41,6 @@ var translator = (function(oldLanguage) {
 return oldLanguage
 }(translator || {}))
 
-// End of coding for JS used lines 3 - 43
+// End of coding for JS used lines 3 - 42
 
 
