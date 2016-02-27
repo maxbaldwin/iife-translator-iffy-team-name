@@ -7,19 +7,19 @@ var translator = (function(translator) {
 		"and" : "ak", 
 		"happy" : "kè kontan", 
 		"new" : "nouvo", 
-		"year" : "ane"
+		"year" : "ane",
 		"holidays" : "jou konje"
 	}
 
 translator.translateToHaitian = function(inputArray) {
   var newArray = inputArray.split(" ");
 	newLanguage = [];
-	inputArray.forEach(function(words) {
-		newLanguage.push(haitian[newArray[words]]);
-	})
+	for (var i = 0; i < newArray.length; i++) {
+		newLanguage.push(haitian[newArray[i]])	 			
+	}
+	
+	return newLanguage.join(" ")
 }
-
 	return translator; 	
 	
 }(translator))
-
