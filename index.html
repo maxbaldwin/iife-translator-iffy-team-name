@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Title</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <p>Translate your phrase to the selected Language</p>
+  <form action="Language_Selector" onSubmit="return false">
+  <textarea id="message" rows="12" cols="25" placeholder="Enter Text Here!"></textarea>
+    <select name="Languages">
+      <option value="German">German</option>
+      <option value="Haitian">Haitian</option>
+      <option value="Latin">Latin</option>
+    </select>
+    <button type="submit" id="translate">Translate</button>
+    <button type='submit' class= "speak" id="speak">🔊 Play</button>
+  </form>
+  <div id="placement">
+    <section>Translated text ends up here.</section>
+  </div>
+</body>
+<script src="latin_page.js"></script>
+<script src="german.js"></script>
+<script src="haiti.js"></script>
+</html>
