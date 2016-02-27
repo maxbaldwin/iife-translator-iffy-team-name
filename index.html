@@ -8,7 +8,7 @@
   <p>Translate your phrase to the selected Language</p>
   <form action="Language_Selector" onSubmit="return false">
   <textarea id="message" rows="12" cols="25" placeholder="Enter Text Here!"></textarea>
-    <select name="Languages">
+    <select name="Languages" id="selected">
       <option value="German">German</option>
       <option value="Haitian">Haitian</option>
       <option value="Latin">Latin</option>
@@ -20,6 +20,7 @@
     <section>Translated text ends up here.</section>
   </div>
 </body>
+<script src="main.js"></script>
 <script src="latin_page.js"></script>
 <script src="german.js"></script>
 <script src="haiti.js"></script>
