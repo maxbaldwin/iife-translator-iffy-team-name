@@ -1,16 +1,47 @@
-  var latinLangChristmas = ["felicem", "natal", "Christi"];
-  console.log("latinLangChristmas", latinLangChristmas);
-  var engLangChristmas = ["Merry", "Christmas"];
-  console.log("engLangChristmas", engLangChristmas)
-  var latinLangNewYears = ["New", "Anno", "Felix"];
-  console.log("latinLangNewYears", latinLangNewYears);
-  var engLangNewYears = ["Happy", "New", "Years"];
-  console.log("engLangNewYears", engLangNewYears );
-  var latinLangHolidays = ["Felices", "fiestas"];
-  console.log("latinLangHolidays", latinLangHolidays );
-  var engLangHolidays = ["Happy", "Holidays"];
-  console.log("engLangHolidays", engLangHolidays );
-  var latinAnd = ["et"];
-  console.log("latinAnd", latinAnd );
-  var engAnd = ["and"];
-  console.log("engAnd", engAnd);
+// first variables set in row 3 - 11
+
+var translator = (function(oldLanguage) {
+  var latin = {
+    "merry": "epulari",
+    "christmas": "Christus",
+    "happy": "laeta",
+    "holidays": "Feriae",
+    "new": "novus",
+    "year": "anno",
+    "and": "et"
+  }
+
+// IFFE statements 16 - 43
+
+  oldLanguage.translateToLatin = function(text) {
+    var array = text.split(" ")
+    console.log("array", array);
+    for (var i = 0; i < array.length; i++) {
+      
+// list all arrays used, lines 23 - 36
+
+      if (array[i] === "merry") {
+        array[i] = latin.merry
+      } else if (array[i] === "christmas") {
+        array[i] = latin.christmas
+      } else if (array[i] === "year") {
+        array[i] = latin.year
+      } else if  (array[i] === "holidays") {
+        array[i] = latin.holidays
+      }else if (array[i] === "and") {
+        array[i] = latin.and
+      } else if (array[i] === "happy") {
+        array[i] = latin.happy
+      } else if (array[i] === "new") {
+        array[i] = latin.new
+      }
+  }
+  text = array.join("")
+  return text
+}
+return oldLanguage
+}(translator || {}))
+
+// End of coding for JS used lines 3 - 43
+
+
