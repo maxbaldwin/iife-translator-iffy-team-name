@@ -10,7 +10,6 @@ var translator = (function(oldLanguage) {
   }
   oldLanguage.translateToGerman = function(text) {
     var array = text.split(" ")
-    console.log("array", array);
     for (var i = 0; i < array.length; i++) {
       if (array[i] === "merry") {
         array[i] = german.merry
