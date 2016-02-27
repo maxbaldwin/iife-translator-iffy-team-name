@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  background-color: teal;
+}
+button {
+  background-color: slategrey;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  box-shadow: 3px 3px 6px black;
+  display: inline-block;
+  margin: auto;
+  margin-top: 5px;
+}
+select {
+  background-color: slategrey;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  box-shadow: 3px 3px 6px black;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+p {
+  font-weight: bolder;
+  font-size: 50px;
+  color: white;
+  border-bottom: 3px solid aqua;
+  display: inline-block;
+  text-shadow: 1px 1px 0 #ccc,
+               2px 2px 0 #c9c9c9,
+               3px 3px 0 #bbb,
+               4px 4px 0 #b9b9b9,
+               5px 5px 0 #aaa,
+               6px 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               1px 1px 3px rgba(0,0,0,.3),
+               3px 3px 5px rgba(0,0,0,.2),
+               5px 5px 10px rgba(0,0,0,.25),
+               10px 10px 10px rgba(0,0,0,.2),
+               20px 20px 20px rgba(0,0,0,.15);
+}
+textarea {
+  display: block;
+  margin: auto;
+  background-color: slategrey;
+  color: white;
+  box-shadow: 3px 3px 6px black;
+  border-radius: 8px;
+}
+.speak {
+  margin-left: 15px;
+}
+div {
+  box-sizing: border-box;
+  font-size: 20px;
+  height: 224px; 
+  width: 224px;
+  margin: auto;
+  background-color: slategrey;
+  color: white;
+  box-shadow: 3px 3px 6px black;
+  border-radius: 8px;
+  margin-top: 25px;
+  display: inline-block;
+  border: 3px solid darkgrey
+}
+::-webkit-input-placeholder {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 1px 0 #ccc,
+               2px 2px 0 #c9c9c9,
+               3px 3px 0 #bbb,
+               4px 4px 0 #b9b9b9,
+               5px 5px 0 #aaa,
+               6px 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               1px 1px 3px rgba(0,0,0,.3),
+               3px 3px 5px rgba(0,0,0,.2),
+               5px 5px 10px rgba(0,0,0,.25),
+               10px 10px 10px rgba(0,0,0,.2),
+               20px 20px 20px rgba(0,0,0,.15);
+}
+section {
+  margin-top: 19px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 1px 0 #ccc,
+               2px 2px 0 #c9c9c9,
+               3px 3px 0 #bbb,
+               4px 4px 0 #b9b9b9,
+               5px 5px 0 #aaa,
+               6px 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               1px 1px 3px rgba(0,0,0,.3),
+               3px 3px 5px rgba(0,0,0,.2),
+               5px 5px 10px rgba(0,0,0,.25),
+               10px 10px 10px rgba(0,0,0,.2),
+               20px 20px 20px rgba(0,0,0,.15);
+}
