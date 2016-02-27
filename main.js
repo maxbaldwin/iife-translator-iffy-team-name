@@ -1,20 +1,19 @@
 var translator = (function() {
-  var inputText = document.getElementById("words");
   var buttonClick = document.getElementById("button");
   var chosenLang =document.getElementById("selected")
 
   return {
-  	getInput: function() {
-  		return inputText;
-  	},
-
+    
 	  buttonClick.addEventListener("click", function() {
+      var inputText = document.getElementById("words");
+
+      
 	  	if (chosenLang.value === "latin") {
-	  		translator.translateToLatin(inputArray.value);
+	  		translator.translateToLatin(inputText.value);
 	  	}else if (chosenLang.value === "haitian") {
-	  		translator.translateToHaitian(inputArray.value);
+	  		translator.translateToHaitian(inputText.value);
 	  	}else if (chosenLang.value === "german") {
-	  		translator.translateToGerman(inputArray.value);
+	  		translator.translateToGerman(inputText.value);
 	  	}
 	  })	
   }
@@ -22,4 +21,4 @@ var translator = (function() {
 
   }
 
-});
+}());

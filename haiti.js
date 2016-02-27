@@ -1,7 +1,6 @@
 
 var translator = (function(translator) {
 
-
 	var haitian = {
 		"merry" : "jwaye", 
 		"christmas" : "nwèl", 
@@ -13,13 +12,14 @@ var translator = (function(translator) {
 	}
 
 translator.translateToHaitian = function(inputArray) {
+  var newArray = inputArray.split(" ");
 	newLanguage = [];
 	inputArray.forEach(function(words) {
-		newLanguage.push(haitian[words]);
+		newLanguage.push(haitian[newArray[words]]);
 	})
 }
 
-
 	return translator; 	
+	
 }(translator))
 
